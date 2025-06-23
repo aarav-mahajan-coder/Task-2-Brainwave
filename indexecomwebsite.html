@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h1><i class="fas fa-blog"></i> Blogging Platform</h1>
+
+        <div id="auth-section">
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button id="login-btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+            <button id="register-btn"><i class="fas fa-user-plus"></i> Register</button>
+            <button id="logout-btn" style="display:none;"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+
+        <div id="post-section" style="display:none;">
+            <h2><i class="fas fa-pen"></i> Create a Post</h2>
+            <input type="text" id="post-title" placeholder="Post Title">
+            <textarea id="post-content" placeholder="Write your post here..."></textarea>
+            <button id="create-post-btn"><i class="fas fa-plus-circle"></i> Post</button>
+
+            <h2><i class="fas fa-newspaper"></i> All Posts</h2>
+            <div id="posts"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
